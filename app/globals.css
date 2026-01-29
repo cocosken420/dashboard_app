@@ -142,6 +142,23 @@
 .grid-full{
   grid-column: 2/4;
 }
+body {
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  line-height: 1.45;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+table {
+  font-size: 0.95rem;
+}
+
+th {
+  font-weight: 600;
+}
+
 .grid-full-2{
   grid-column: 1/4;
 }
@@ -166,8 +183,16 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   cursor: pointer;
 }
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 html{
-  font-family: "Calibri" !important;
+    font-family:
+      "Inter",
+      "Segoe UI",
+      Roboto,
+      Helvetica,
+      Arial,
+      sans-serif
+  !important;
 }
 .bg-cosed{
   background-color: rgb(0, 0, 0,0.9);

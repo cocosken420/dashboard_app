@@ -38,7 +38,7 @@ export default function RootLayout({
   
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased `}>
+      <body>
         <ThemeProvider>
           <Suspense fallback={<p>Loading...</p>}>
           {children}
