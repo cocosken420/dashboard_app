@@ -25,7 +25,6 @@ export default function EnhancedUserProfile() {
   const [alerts,setAlerts]=useState<Alert[]>([])
  
   
-  console.log(users.length)
   useEffect(() => {
     const user = users.find(u => u.id === params.id)
     if(user) setUser(user)

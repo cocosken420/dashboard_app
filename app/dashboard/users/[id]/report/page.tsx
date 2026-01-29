@@ -152,7 +152,6 @@ interface ReportContentProps {
 function ReportContent({ user,fontSize }: ReportContentProps) {
   return (
     <div className="bg-white text-black p-1" style={{ 
-      fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
       fontSize: `${fontSize}px`,
       color: '#1c1e21'
     }}>

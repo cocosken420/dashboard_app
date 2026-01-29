@@ -166,7 +166,7 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.25);
   cursor: pointer;
 }
-.czcionka{
+html{
   font-family: "Calibri" !important;
 }
 .bg-cosed{
@@ -177,8 +177,6 @@
   align-items: center;
 }
 pre {
-  font-family: var(--font-sans);
-
   white-space: pre-wrap;   /* keep new lines, allow wrapping */
   word-break: normal;      /* DO NOT break words arbitrarily */
   overflow-wrap: break-word; /* break only if absolutely necessary */
