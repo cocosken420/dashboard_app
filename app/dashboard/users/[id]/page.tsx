@@ -25,13 +25,11 @@ export default function EnhancedUserProfile() {
   const [alerts,setAlerts]=useState<Alert[]>([])
  
   
-  console.log(user)
-  
+  console.log(users.length)
   useEffect(() => {
     const user = users.find(u => u.id === params.id)
     if(user) setUser(user)
   }, [users])
-  
   const handleEditToggle = () => {
     router.push(`/dashboard/add_user?editing=true&userID=${user.id}`)
   }

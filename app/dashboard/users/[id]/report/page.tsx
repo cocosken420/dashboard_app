@@ -247,7 +247,7 @@ function ReportContent({ user,fontSize }: ReportContentProps) {
             <pre className={`text-[${fontSize}px] whitespace-pre-line leading-relaxed`}>{user.sprzedaz || ''}</pre>
           <div className="border-2    min-h-[100px]">
             <div className="">
-              {user.zdjecie && user.zdjecie.map((image, idx) => (
+              {Array.isArray(user.zdjecie) && user.zdjecie.map((image, idx) => (
                 
                   <img 
                   key={idx}

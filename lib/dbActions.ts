@@ -160,7 +160,7 @@ export const removeTaskFromUser = async (userId: string, task: Task) => {
     }
 }
 
-export async function updateUserInDb(user: User) {
+export async function updateUserInDb(user: any) {
   try {
     const userRef = doc(db, "users", user.id);
     const encryptedUser = encryptSimple(user);

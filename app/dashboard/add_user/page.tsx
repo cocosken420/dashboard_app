@@ -338,7 +338,7 @@ export default function ExpandedAddUserForm() {
         {editing&&<Button onClick={handleSubmit} disabled={isLoading} className="flex-1 fixed left-[2rem] bottom-[2rem]">
                 {isLoading ? "Zapisywanie..." : editing ? "Aktualizuj Klienta" : "Zapisz dane"}
           </Button>}
-      <div className="min-h-screen overflow-x-hidden bg-gradient-to-br w-fit lg:grid lg:grid-cols-3 p-3  sm:p-4 md:p-6
+      <div className="min-h-screen czcionka overflow-x-hidden bg-gradient-to-br w-fit lg:grid lg:grid-cols-3 p-3  sm:p-4 md:p-6
 ">
         <UsersManagementPage showAlert={showAlertFkc} users={usersList} />
 
