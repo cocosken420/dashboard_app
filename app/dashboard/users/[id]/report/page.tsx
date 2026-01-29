@@ -153,6 +153,7 @@ function ReportContent({ user,fontSize }: ReportContentProps) {
   return (
     <div className="bg-white text-black p-1" style={{ 
       fontSize: `${fontSize}px`,
+      fontFamily: 'var(--font-sans)',
       color: '#1c1e21'
     }}>
       {/* Header with Company Name */}

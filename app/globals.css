@@ -5,7 +5,6 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.141 0.005 285.823);
   --popover: oklch(1 0 0);
@@ -83,7 +82,7 @@
 }
 
 @theme inline {
-  --font-sans: "Geist", "Geist Fallback";
+  --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: "Geist Mono", "Geist Mono Fallback";
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -147,18 +146,12 @@ body {
   font-weight: 400;
   letter-spacing: 0.01em;
   line-height: 1.45;
+  font-family: var(--font-sans);
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-table {
-  font-size: 0.95rem;
-}
-
-th {
-  font-weight: 600;
-}
 
 .grid-full-2{
   grid-column: 1/4;
@@ -185,14 +178,7 @@ th {
   cursor: pointer;
 }
 html{
-    font-family:
-      "Inter",
-      "Segoe UI",
-      Roboto,
-      Helvetica,
-      Arial,
-      sans-serif
-  !important;
+  font-family: var(--font-sans);
 }
 .bg-cosed{
   background-color: rgb(0, 0, 0,0.9);
@@ -202,6 +188,7 @@ html{
   align-items: center;
 }
 pre {
+  font-family: var(--font-sans);
   white-space: pre-wrap;   /* keep new lines, allow wrapping */
   word-break: normal;      /* DO NOT break words arbitrarily */
   overflow-wrap: break-word; /* break only if absolutely necessary */
