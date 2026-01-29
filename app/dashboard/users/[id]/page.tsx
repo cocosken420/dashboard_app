@@ -25,7 +25,7 @@ export default function EnhancedUserProfile() {
   const [alerts,setAlerts]=useState<Alert[]>([])
  
   
-  
+  console.log(user)
   
   useEffect(() => {
     const user = users.find(u => u.id === params.id)
@@ -78,7 +78,7 @@ export default function EnhancedUserProfile() {
   }
 
   return (
-<div className="min-h-screen bg-gradient-to-br p-3 sm:p-4 md:p-6 overflow-x-hidden">
+<div className="min-h-screen czcionka bg-gradient-to-br p-3 sm:p-4 md:p-6 overflow-x-hidden">
 <Alerts alerts={alerts}/ >
   <div className=" mx-auto space-y-4 sm:space-y-6">
         {/* Header - Mobile Optimized */}
@@ -367,7 +367,7 @@ export default function EnhancedUserProfile() {
                       Przesłane zdjęcia ({user.zdjecie.length})
                     </label>
                     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
-                      {user.zdjecie.map((image, idx) => (
+                      {Array.isArray(user.zdjecie)&&user.zdjecie.map((image, idx) => (
                         <div 
                           key={idx} 
                           className="group relative aspect-square rounded-lg overflow-hidden bg-gray-100 border-2 border-gray-200 hover:border-blue-400 transition-all duration-200 hover:shadow-lg cursor-pointer"

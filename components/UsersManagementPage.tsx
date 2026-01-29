@@ -126,7 +126,7 @@ function UsersManagementPage({ users, showAlert }: {showAlert:(message: string, 
 
   return (
     <>
-      <div className="space-y-4 lg:mb-3 sm:space-y-6 g2 p-3 sm:p-0">
+      <div className="space-y-4 lg:mb-3 czcionka sm:space-y-6 g2 p-3 sm:p-0">
         <Card>
           <CardHeader className="pb-3 sm:pb-6">
             <CardTitle className="text-lg sm:text-xl">Zarządzanie Użytkownikami</CardTitle>
