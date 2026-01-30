@@ -27,8 +27,11 @@ export  const showAlert = (message: string, type: "error" | "success" | "warning
       message,
       type,
     }
+    console.log(`stworzone :${newAlert}`)
     setAlerts([...alerts, newAlert])
     setTimeout(() => {
+      console.log(`po usunieciu`)
+      console.log(alerts.filter((alert) => alert.id !== newAlert.id))
       setAlerts(alerts.filter((alert) => alert.id !== newAlert.id))
     }, 3000)
   }
