@@ -8,7 +8,7 @@ import { Suspense } from "react"
 
 
 export const metadata: Metadata = {
-  title: "Dashboard - User Management System",
+  title: "RoadKing",
   description: "Professional dashboard for user and task management",
   generator: "v0.app",
   icons: {
