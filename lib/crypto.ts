@@ -21,7 +21,7 @@ export function encryptSimple(user: User): EncryptedUserSimple|null {
   const iv = crypto.randomBytes(16)
   const cipher = crypto.createCipheriv(algorithm, secretKey, iv)
   const userFromCookies = getUserCookie();
-  if(!userFromCookies)return null;
+  if(!userFromCookies) throw new Error("No user cookie")
   // Stringify the entire user object (except id which we keep unencrypted for queries)
   const userData = JSON.stringify(user)
   
