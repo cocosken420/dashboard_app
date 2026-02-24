@@ -31,4 +31,7 @@ export  const showAlert = (message: string, type: "error" | "success" | "warning
     setTimeout(() => {
       setAlerts(alerts.filter((alert) => alert.id !== newAlert.id))
     }, 3000)
+    setTimeout(() => {
+        setAlerts([])
+    }, 5000);
   }
